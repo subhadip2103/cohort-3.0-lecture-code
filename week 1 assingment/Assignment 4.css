@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    height: 30vh;
+    width: 80vw;
+    display: flex;
+    gap: 10px;
+}
+
+.left {
+    background-color: red;
+    flex:1 1 33.33%
+    
+
+}
+.left>h1{
+  text-align: center;
+}
+.para{
+    display: grid;
+    grid-template-columns:repeat(11,1fr);
+
+}
+
+.right {
+    background-color: blue;
+    flex:2 2 66.66%;
+}
+.columns{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto auto auto;
+}

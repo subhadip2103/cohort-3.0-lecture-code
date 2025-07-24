@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Go to college",
+    "id": 1,
+    "completed": false
+  },
+  {
+    "title": "Go to gym",
+    "id": 2,
+    "completed": false
+  },
+  {
+    "title": "Make notes",
+    "id": 3,
+    "completed": false
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "name": "week-4-assignment",
+  "version": "1.0.0",
+  "main": "userbasedtodo.js",
+  "scripts": {
+    "start": "node userbasedtodo.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

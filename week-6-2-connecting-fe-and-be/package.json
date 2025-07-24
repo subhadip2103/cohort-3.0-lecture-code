@@ -1,0 +1,17 @@
+{
+  "name": "week-6-2-connecting-fe-and-be",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "type": "commonjs"
+}

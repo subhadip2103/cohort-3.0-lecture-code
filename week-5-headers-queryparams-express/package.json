@@ -1,0 +1,16 @@
+{
+  "name": "week-5-headers-queryparams-express",
+  "version": "1.0.0",
+  "main": "assignment.js",
+  "scripts": {
+    "start": "node assignments.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}

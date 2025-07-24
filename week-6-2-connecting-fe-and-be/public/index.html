@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div id="auth-section">
+        <div class="signup">
+            Signup
+            <input type="text" placeholder="Username" id="signup-username">
+            <input type="text" placeholder="Password" id="signup-password">
+            <button onclick="signup()">Submit</button>
+        </div>
+        <div class="signin">
+            Signin
+            <input type="text" placeholder="Username" id="signin-username">
+            <input type="text" placeholder="Password" id="signin-password">
+            <button onclick="signin()">Submit</button>
+        </div>
+    </div>
+
+    <div id="user-section">
+        <div class="userinformation">
+            <h1>User information:</h1>
+            <div class="userinfo-display"></div>
+        </div>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+
+
+
+    <script src="indexfe.js"></script>
+</body>
+
+</html>

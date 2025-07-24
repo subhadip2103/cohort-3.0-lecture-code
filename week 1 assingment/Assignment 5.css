@@ -1,0 +1,27 @@
+
+.maincontainer{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: black;
+   
+
+}
+.leftdiv{
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    
+}
+.rightdiv{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.lanuguagecontainer{
+    display: flex;
+    align-items: center;
+}
+.lanuguagecontainer>img{
+    width: 30px;
+    height: 30px;
+}

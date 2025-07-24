@@ -1,0 +1,28 @@
+[
+  {
+    "name": "john",
+    "todos": [
+      {
+        "title": "Buy milk",
+        "completed": false
+      },
+      {
+        "title": "Make notes",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "name": "harry",
+    "todos": [
+      {
+        "title": "Go to gym",
+        "completed": false
+      },
+      {
+        "title": "Make notes",
+        "completed": false
+      }
+    ]
+  }
+]

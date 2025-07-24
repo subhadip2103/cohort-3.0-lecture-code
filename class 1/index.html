@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class 1</title>
+</head>
+
+<body>
+
+    <script>
+        // let sum=0;
+        // for(let i=0;i<=100;i++ ){
+        //     sum+=i
+        // }
+        // console.log(sum);
+
+        //quetion 1
+        // let firstname=prompt('enter your firstname here')
+        // let lastname=prompt('enter your lastname here')
+        // let fullname=firstname+" "+lastname
+        // console.log(`hello ${fullname}`);
+
+
+        //question 2
+        // let gender='Female';
+        // if(gender==='male'){
+        //     console.log('Good morning sir');
+        // }
+        // else{
+        //     console.log('Good morining mam');
+        // }
+
+        // //question 3
+        // for(let i=0;i<1001;i++){
+        //     console.log(i);
+        // }
+
+        //question 4
+        // let arr = [];
+        // for (let i = 1; i <= 100; i++) {
+        //     arr.push(i);
+        // }
+
+        // // for (let i = 0; i < arr.length; i++) {
+        // //     if (arr[i] % 2 === 0) {
+        // //         console.log(arr[i]);
+        // //     }
+        // // }
+
+        // //question 5
+        // let largestNum = arr[0];
+        // for (let i = 0; i < arr.length; i++) {
+        //     if (arr[i] > largestNum) {
+        //         largestNum = arr[i];
+        //     }
+        // }
+        // console.log(largestNum);
+
+        //question 6
+        // arr = [{
+        //     firstName: 'adam',
+        //     lastName: 'gilchrist',
+        //     Gender: 'Male',
+        //     Age: 32,
+        // }, {
+        //     firstName: 'david',
+        //     lastName: 'beckham',
+        //     Gender: 'Male',
+        //     Age: 38,
+        // }, {
+        //     firstName: 'Indira',
+        //     lastName: 'Gandhi',
+        //     Gender: 'Female',
+        //     Age: 82,
+        // }, {
+        //     firstName: 'Lata',
+        //     lastName: 'Mangeshkar',
+        //     Gender: 'Female',
+        //     Age: 32,
+        // }];
+
+        // for(let i=0;i<arr.length;i++){
+        //     if(arr[i].Gender==='Male'){
+        //         console.log(arr[i].firstName)
+        //     }
+        // }
+
+
+        //question 7
+        // arr=[8,9,66,54,78,32,6,5,12,59,65,80];
+        // arr.reverse();
+        // console.log(arr)
+
+        //question 8
+        // sum=(num1,num2)=>num1+num2;
+
+        // // console.log(sum(9,8))
+
+        // //question 9
+        // DisplaySum=(func,num1,num2)=>console.log(`the sum of ${num1} and ${num2} is ${sum(num1,num2)} `);
+
+        // console.log(DisplaySum(sum,6,5));
+
+        // //question 10
+        // DisplaySumPassive=(func,num1,num2)=>console.log(`${sum(num1,num2)} is obtained as the sum of numbers ${num1} and ${num2}.`);
+
+        // console.log(DisplaySumPassive(sum,18,38));
+
+
+        //bounty question
+        // let sum=0
+        // for(let i=0;i<1000000000000;i++){
+        //     sum+=i
+
+        // }
+        // console.log(sum)
+
+        //question 11
+        // for (let i = 30; i >=0; i--) {
+        //     console.log(i)
+        // }
+       
+        //question 12
+        let startime=Date.now();
+        TimeCounter=()=>{
+            let endtime=Date.now();
+            let acutualdelay=endtime-startime;
+            return acutualdelay
+        }
+
+        console.log(setTimeout(TimeCounter,5000))
+    </script>
+</body>
+
+</html>

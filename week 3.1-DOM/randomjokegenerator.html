@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .main {
+            height: 500px;
+            width: 1000px;
+            background-color: blue;
+            position: relative;
+            top: 100px;
+            left: 250px;
+        }
+
+        .jokes-display {
+            height: 80%;
+            width: 90%;
+        }
+
+        .create-btn {
+            height: 20%;
+            width: 20%;
+            position: relative;
+            left: 400px;
+        }
+        .setup{
+            text-align: center;
+        }
+        .delivery{
+            text-align: center;
+        }
+    </style>
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="jokes-display"></div>
+        <input type="button" value="Create a joke" class="create-btn">
+    </div>
+
+    <script>
+        let jokeContainer=document.querySelector('.jokes-display')
+        async function fetchJoke() {
+            let obj=await fetch("https://sv443.net/jokeapi/v2/joke/Any");
+            let data=await obj.json();
+            console.log(data)
+            jokeContainer.innerHTML=`
+            <h1 class="setup">${data.setup}</h1>
+            <h1 class="delivery">${data.delivery}</h1>
+            `
+
+            
+        }
+
+        document.querySelector('.create-btn').addEventListener('click',fetchJoke,)
+
+
+    </script>
+
+</body>
+
+</html>

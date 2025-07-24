@@ -1,0 +1,18 @@
+body{
+    display: flex;
+    justify-content: center;
+
+}
+.container{
+    
+    background-color: red;
+    width: 1200px;
+
+}
+.content{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
