@@ -234,25 +234,25 @@
 // const p= readFile();
 
 // //while creating a promise class it says that whenever you are creating a promise class give me an function as an arguement which does an actual asynchronous operation.
-// class myPromise{
-//     constructor(fn){
-//         this.fn=fn;
-//     }
-//     then(cb){
-//         this.resolve=cb;
+class myPromise{
+    constructor(fn){
+        this.fn=fn;
+    }
+    then(cb){
+        this.resolve=cb;
 
-//     }
-// }
-// function helloworld(resolve){
-//     setTimeout(resolve,3000)
-// }
-// function message(){
-//     console.log('hello world')
-// }
+    }
+}
+function helloworld(resolve){
+    setTimeout(resolve,3000)
+}
+function message(){
+    console.log('hello world')
+}
 
-// let promise= new Promise(helloworld)
+let promise= new Promise(helloworld)
 
-// promise.then(message)
+promise.then(message)
 
 // function setTimeoutPromisified(ms) {
 //   return new Promise(resolve => { setTimeout(resolve, ms) })

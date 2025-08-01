@@ -17,25 +17,25 @@
 and returns the users whose age > 18 and are male*/
 
 
-// data = [{ name: 'Rohan', age: 21, gender: 'Male' }, { name: 'luvesh', age: 27, gender: 'Male' }, { name: 'Lata', age: 51, gender: 'Female' }, { name: 'Jeevak', age: 14, gender: 'Male' }];
+data = [{ name: 'Rohan', age: 21, gender: 'Male' }, { name: 'luvesh', age: 27, gender: 'Male' }, { name: 'Lata', age: 51, gender: 'Female' }, { name: 'Jeevak', age: 14, gender: 'Male' }];
 
-// let validCandiate;
-// function validUser(arr) {
-//     validCandiate=arr.filter(criteriaCheck);
+let validCandiate;
+function validUser(arr) {
+    validCandiate=arr.filter(criteriaCheck);
 
-//     console.log(validCandiate);
+    console.log(validCandiate);
 
-// }
+}
 
-// function criteriaCheck(user){
-//     if(user.age>=18 && user.gender==='Male'){
-//         return true;
-//     }
+function criteriaCheck(user){
+    if(user.age>=18 && user.gender==='Male'){
+        return true;
+    }
     
 
-// }
+}
 
-// validUser(data);
+validUser(data);
 
 
 /*Write a function sum that finds the sum of two numbers. 
