@@ -2,7 +2,6 @@ const express = require("express");
 import dotenv from "dotenv";
 dotenv.config();
 const jwt = require("jsonwebtoken");
-const JWT_SECRET = "dbadlndasjlh@30459e00ijfqoai"
 const app = express();
 const { UserModel, TodoModel } = require("./db");
 const mongoose = require("mongoose");
