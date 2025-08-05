@@ -4,8 +4,8 @@ const Schema = mongoose.Schema;
 
 const User = new Schema({
     email: { type: String, unique: true },
-    password: stringify,
-    name: string
+    password: String,
+    name: String
 })
 
 const Todo = new Schema({
