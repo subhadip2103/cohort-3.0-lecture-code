@@ -94,7 +94,7 @@ app.post("/todo", auth, async (req, res) => {
     await TodoModel.create({
         description: description,
         done: done,
-        userid: req.userid
+        userid: req.userId
     })
 
     res.status(200).json({
@@ -104,7 +104,7 @@ app.post("/todo", auth, async (req, res) => {
 })
 app.get("/todos", auth, async (req, res) => {
     try {
-        let todos = await TodoModel.find({ userid: req.userid });
+        let todos = await TodoModel.find({ userid: req.userId });
 
         res.status(200).json({
             Todos: todos
