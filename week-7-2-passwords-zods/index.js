@@ -25,7 +25,7 @@ app.post("/signup", async (req, res) => {
     const parsedDataWithSuccess = requiredBody.safeParse(req.body);
 
     if (!parsedDataWithSuccess.success) {
-        res.status(404).json({ 
+        return res.status(404).json({ 
             message: "incorrect format",
             error:parsedDataWithSuccess.error.format()
          })
@@ -67,7 +67,7 @@ app.post("/signin", async (req, res) => {
     })
 
     if (!user) {
-        res.status(403).json({ msg: "user not found in our database" })
+        return res.status(403).json({ msg: "user not found in our database" })
     }
 
     const passwordMatch = await bcrypt.compare(password, user.password)
