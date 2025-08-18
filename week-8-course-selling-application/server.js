@@ -1,16 +1,26 @@
 const express = require('express');
+require("dotenv").config()
+const mongoose = require("mongoose");
 const app = express();
 const jwt = require('jsonwebtoken')
-const mongoose = require("mongoose")
 const { UserRouter } = require("./Routes/users");
 const { CourseRouter } = require("./Routes/courses");
 const { adminRouter } = require("./Routes/admin");
+const cookieParser = require('cookie-parser');
 
+app.use(cookieParser());
 app.use(express.json())
 
 app.use("/api/v1/users", UserRouter)
 app.use("/api/v1/courses", CourseRouter)
+app.use("/api/v1/admins", adminRouter)
 
-app.listen(3000, () => {
-    console.log("Running on port 3000")
-});
+
+async function main() {
+    await mongoose.connect(`${process.env.MONGODB_URL}coursera-db`);
+    app.listen(3000, () => {
+        console.log("Running on port 3000")
+    });
+}
+
+main();
