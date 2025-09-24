@@ -19,7 +19,7 @@ function UseCounter() {
 
 function App() {
   const [currentPost, setCurrentPost] = useState(1)
-  const { finalData, loading } = UseFetch(`https://jsonplaceholder.typicode.com/posts/${currentPost}`);
+  const { finalData, loading } = UseFetch(`https://jsonplaceholder.typicode.com/posts/${currentPost}`,10);
 
   return (
     <div>
