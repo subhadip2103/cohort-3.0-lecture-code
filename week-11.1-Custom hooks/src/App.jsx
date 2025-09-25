@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { UseFetch } from './hooks/useFetch';
 import { usePrev } from './hooks/usePrev';
+import { useDebounce } from './hooks/useDebounce';
 
 function UseCounter() {
   const [count, setCount] = useState(0);
@@ -17,18 +18,40 @@ function UseCounter() {
 }
 
 
-function App(){
-  const [state,setState]=useState(0);
-  const previousValue=usePrev(state)
-  return(
-    <div>
-      <p>{state}</p>
-      <button onClick={()=>setState(state+1)}>Click me</button>
-      <p>Previous count value is {previousValue} </p>
-    </div>
+function App() {
+  function sendDataToBackend() {
+    fetch("api.amazon.com/search/")
+    console.log("called api")
+  }
+
+  const debouncedFn=useDebounce(sendDataToBackend)
+  return (
+    <>
+      <input type="text" onChange={debouncedFn}/>
+    </>
   )
+  
 
 }
+
+
+
+
+
+
+
+// function App(){
+//   const [state,setState]=useState(0);
+//   const previousValue=usePrev(state)
+//   return(
+//     <div>
+//       <p>{state}</p>
+//       <button onClick={()=>setState(state+1)}>Click me</button>
+//       <p>Previous count value is {previousValue} </p>
+//     </div>
+//   )
+
+// }
 
 
 
