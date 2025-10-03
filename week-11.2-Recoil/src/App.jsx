@@ -1,5 +1,5 @@
 import { RecoilRoot, useRecoilValue, useSetRecoilState } from "recoil"
-import { counterAtom, evenSelector } from "./store/atoms/counter"
+import { counterAtom, evenSelector, primeSelector } from "./store/atoms/counter"
 import { useState, memo, useEffect } from "react"
 
 
@@ -7,7 +7,7 @@ function App() {
   return <RecoilRoot>
     <Buttons />
     <Counter />
-    <IsEven />
+    <EvenandPrime />
   </RecoilRoot>
 
 }
@@ -31,11 +31,16 @@ function Counter() {
   const count = useRecoilValue(counterAtom);
   return <div>{count}</div>
 }
-function IsEven() {
+function EvenandPrime(){
+  
   const even = useRecoilValue(evenSelector);
-  return <div>{even ? "Even":"Odd"}</div>
-}
+  const prime=useRecoilValue(primeSelector)
+  return <div>
+    <div>{even ? "Even":"Odd"}</div>
+    <div>{prime? "Prime":"Not Prime"}</div>
+  </div> 
 
+}
 
 
 // function App() {
