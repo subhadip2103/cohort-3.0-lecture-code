@@ -19,7 +19,7 @@ function MainApp() {
       <Messaging />
       <Notifications />
       <TotalNotification/>
-      {/* <ClearButton/> */}
+      <ClearButton/>
     </div>
   )
 }
@@ -70,21 +70,21 @@ function TotalNotification(){
   const totalNotificationCount=useRecoilValue(sumOfAtomCount);
   return <button>Me({totalNotificationCount})</button>
 }
-// function ClearButton(){
-//   const resetNetwork = useResetRecoilState(networkAtom);
-//   const resetJobs = useResetRecoilState(jobsAtom);
-//   const resetMessages = useResetRecoilState(messagingAtom);
-//   const resetNotifications = useResetRecoilState(notificationsAtom);
+function ClearButton(){
+  const resetNetwork = useResetRecoilState(networkAtom);
+  const resetJobs = useResetRecoilState(jobsAtom);
+  const resetMessages = useResetRecoilState(messagingAtom);
+  const resetNotifications = useResetRecoilState(notificationsAtom);
 
-//   function handleClearAll() {
-//     resetNetwork();
-//     resetJobs();
-//     resetMessages();
-//     resetNotifications();
-//   }
+  function handleClearAll() {
+    resetNetwork();
+    resetJobs();
+    resetMessages();
+    resetNotifications();
+  }
 
-//   return <button onClick={handleClearAll}>Clear Notifications</button>
+  return <button onClick={handleClearAll}>Clear Notifications</button>
 
-// }
+}
 
 export default App
